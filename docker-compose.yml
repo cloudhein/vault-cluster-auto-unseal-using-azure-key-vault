@@ -5,8 +5,8 @@ services:
     image: hashicorp/vault:1.18
     hostname:  vault-dev-server1
     container_name: vault-dev-server1
-    ports:
-      - "8200:8200"
+    # ports:
+    #   - "8200:8200"
     cap_add:
       - IPC_LOCK
     networks:
@@ -28,8 +28,8 @@ services:
     image: hashicorp/vault:1.18
     hostname:  vault-dev-server2
     container_name: vault-dev-server2
-    ports:
-      - "8202:8200"
+    # ports:
+    #   - "8202:8200"
     cap_add:
       - IPC_LOCK
     networks:
@@ -53,8 +53,8 @@ services:
     image: hashicorp/vault:1.18
     hostname:  vault-dev-server3
     container_name: vault-dev-server3
-    ports:
-      - "8204:8200"
+    # ports:
+    #   - "8204:8200"
     cap_add:
       - IPC_LOCK
     networks:
