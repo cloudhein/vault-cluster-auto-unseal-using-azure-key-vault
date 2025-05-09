@@ -7,7 +7,7 @@ VAULT_PID=$!
 # give Vault a few seconds to become responsive
 sleep 7
 
-# initialize if needed
+# Initialize Vault
 if vault status | grep -q 'Initialized.*false'; then
   echo "Vault is not initialized. Initializing..."
   vault operator init > /unseal-script/unseal-output.txt

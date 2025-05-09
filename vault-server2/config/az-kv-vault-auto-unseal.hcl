@@ -35,10 +35,9 @@ seal "azurekeyvault" {
     #tenant_id  = "paste_quoted_tenant_id_from_azure"
     #client_id  = "paste_quoted_entra_client_id_from_azure"
     #client_secret = "paste_quoted_entra_app_secret_from_azure"
-    vault_name = "vault-key-auto-unseal"
-    key_name  = "unseal-key"
+    vault_name = "dev-vault-b1b897a1" # replace with your key vault name
+    key_name  = "generated-key" # replace with your key name
 }
-
 # Request Listeners
 listener "tcp" {
     address = "0.0.0.0:8200"
